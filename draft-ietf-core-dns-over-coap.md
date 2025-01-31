@@ -511,6 +511,11 @@ harden against injecting spoofed responses.
 Consequently, it is of little concern to leverage the benefits of CoAP caching by setting the ID to
 0.
 
+A user of DoC must be aware that the DoC server, unless the security context is with yet another
+party, may communicate unencrypted with the upstream DNS infrastructure, e.g., using DNS over UDP.
+DoC can only guarantee confidential communication between parties for which the security context
+is exchanged.
+
 IANA Considerations
 ===================
 
